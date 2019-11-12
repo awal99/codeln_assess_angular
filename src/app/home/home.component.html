@@ -1,0 +1,94 @@
+<div class="wrapper">
+  <!-- left navbar -->
+  <div class="leftnav">
+    <div class="navtop">
+      <div class="title2">X & Os</div>
+      <div style="justify-content: center;display: flex;">
+      <img
+        src="{{ currentUser.profilepic }}"
+        alt="loading user pic"
+        width="150px"
+        height="150px"
+        style="border-radius: 50%; align-self: center;"
+      />
+      </div>
+      <div class="name">
+        <i>{{ currentUser.name }}</i>
+      </div>
+      <div class="points">25 points</div>
+    </div>
+
+    <div class="navlist">
+       <li class="active"><a>Games</a></li>
+       <li><a>Leaderboard</a></li>
+    </div>
+  </div>
+
+  <!-- page content -->
+  <div class="container">
+    <div
+      style="justify-content: right;display: flex;align-items: flex-end;flex-direction: column;-ms-flex-direction: column;"
+    >
+      <button type="button" class="newgame-btn pull-right" (click)="gotToNewGame();">New Game</button>
+    </div>
+    <div class="opened-games"><i>Opened Games</i></div>
+    <div class="row ">
+      <div class="col-lg-12">
+        <div class="card  opened-users">
+          <div class="card-body">
+            <div
+              *ngFor="let og of openedGames"
+              class="col-sm-3 col-lg-3 opg-user-container"
+            >
+              <img
+                src="{{ og.url }}"
+                width="100px"
+                height="100px"
+                style="border-radius:50%;"
+              />
+              <div class="join-button"><i>Join</i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-games"><i>My Games</i></div>
+    <div class="row ">
+      <div class="col-lg-12">
+        <div class="card  games">
+          <div class="card-body">
+              <!-- bottom card left -->
+            <div class="bc-left">
+            <div class="col-sm-3 col-lg-3 opg-game-container">
+              <img
+                src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1220441804809213&height=50&width=50&ext=1574886095&hash=AeRrkJrcaL2XO8rb"
+                width="100px"
+                height="100px"
+                style="border-radius:50%;"
+              />
+              <div class="name"><i>Me</i></div>
+            </div>
+            <div class="title2"><i>VS</i></div>
+            <div class="col-sm-3 col-lg-3 opg-game-container">
+              <img
+                src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1220441804809213&height=50&width=50&ext=1574886095&hash=AeRrkJrcaL2XO8rb"
+                width="100px"
+                height="100px"
+                style="border-radius:50%;"
+              />
+              <div class="name"><i>Jane</i></div>
+            </div>
+          </div>
+          <!-- bottom card right -->
+          <div class="bc-right">
+             <div class="text1"><i>Jane has played and it is your turn</i></div>
+             <div class="play-btn">play</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- right navbar -->
+  <div></div>
+</div>

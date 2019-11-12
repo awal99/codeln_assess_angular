@@ -1,0 +1,202 @@
+$yellow: #F7EF99;
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#rsidebar {
+    min-width: 250px;
+    max-width: 250px;
+    right:0;
+    display: flex;
+    min-height: 100vh;
+    background-color: brown;
+}
+
+#rsidebar.active {
+    margin-left: -250px;
+}
+
+.container{
+    margin-top: 5%;
+}
+
+.leftnav{
+    min-height: 100vh !important;
+    min-width: 250px;
+    max-width: 250px;
+    background-color:$yellow;
+    padding-top:40px;
+    .navtop{
+        margin:25px
+    }
+}
+
+.newgame-btn{
+    background-color: brown;
+  color: #fff;
+  border-radius: 15px;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  height: 30px;
+  width:150px;
+  right: 0px;
+}
+
+.opened-users,.games{
+    background-color: brown;
+    border-radius: 10px;
+    padding:15px;
+    display: flex;
+    clear: right;
+  }
+
+.games{
+    background-color: $yellow;
+}
+
+.opened-games,.my-games{
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color:brown;
+    left:0px;
+    text-align: left;
+  }
+
+  .opened-games{
+    margin-top:60px;
+    margin-bottom: 30px;
+  }
+  
+  .my-games{
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+.opg-user-container,.opg-game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-body{
+    justify-content: center;
+    display:flex;
+    padding:0px;
+}
+
+.join-button{
+    width:90px;
+    height:35px;
+    background-color: $yellow;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    color: brown;
+    font-weight: bold;
+    margin-top:20px;
+    padding-top:5px;
+    cursor: pointer;
+}
+
+.name{
+    font-weight: bold;
+    color: brown;
+    font-family: cursive;
+    font-size:22px;
+    text-align: center;
+}
+
+.points{
+    font-weight: bold;
+    color: brown;
+    font-family: cursive;
+    font-size:16px;
+    text-align: center;
+}
+
+.navlist{
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .navlist li {
+    text-align: left;
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 20px;
+  }
+  
+  .navlist li a{
+    text-decoration-style: none;
+    text-decoration: none;
+    color:brown;
+  
+  }
+  
+  .navlist li:hover{
+    color:#fff;
+    background-color: brown;
+    padding:10px;
+  }
+  
+  .active{
+    color:#fff;
+    background-color: brown;
+    padding:10px;
+  }
+  
+  .active a{
+    color: #fff !important;
+  }
+  
+  .navlist li a:hover{
+    color: #fff;
+  }
+
+  .bc-left{
+      flex:0.5;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+  }
+  .bc-right{
+      flex:0.5;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.text1{
+    font-family: cursive;
+    color:brown;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.play-btn{
+    width:100px;
+    height: 30px;
+    background-color: brown;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    color:$yellow;
+    font-family: cursive;
+    cursor: pointer;
+    align-self: center;
+}

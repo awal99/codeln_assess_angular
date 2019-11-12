@@ -1,0 +1,104 @@
+$yellow: #F7EF99;
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    background-color:brown;
+}
+
+.container{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.leftnav{
+    min-height: 100vh !important;
+    min-width: 250px;
+    max-width: 250px;
+    background-color:brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:40px;
+   
+}
+
+.rightnav{
+    min-height: 100vh !important;
+    min-width: 250px;
+    max-width: 250px;
+    background-color:brown;
+    padding-top:40px;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#board {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    display: grid;
+    background-color:white;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    font-size: 50px;
+    grid-gap: 3px;
+    
+}
+
+#board.locked {
+    opacity: .7;
+    pointer-events: none;
+}
+
+#board .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:brown;
+    cursor: pointer;
+    color:$yellow;
+}
+
+#board .square.checked {
+    cursor: default;
+}
+
+#board .square.winner {
+    background-color: #ffa1a1;
+}
+
+input[type=button] {
+    margin-top: 20px;
+}
+
+.name{
+    font-weight: bold;
+    color:$yellow;
+    font-family: cursive;
+    font-size:22px;
+    text-align: center;
+}
+
+.points{
+    font-weight: bold;
+    color:$yellow;
+    font-family: cursive;
+    font-size:16px;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+    justify-content: center;
+    font-family: cursive;
+    color: $yellow;
+}
